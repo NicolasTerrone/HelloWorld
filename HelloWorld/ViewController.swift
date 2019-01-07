@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func welcomeBtnWasPressed(_ sender: Any) {
+        bgImageView.isHidden = false
+        logoImageView.isHidden = false
+    }
+    
 }
 
