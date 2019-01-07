@@ -15,14 +15,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bgImageView.isHidden = true
-        logoImageView.isHidden = true
+        hideImage()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    private func hideImage(){
+        bgImageView.isHidden = true
+        logoImageView.isHidden = true
+    }
     @IBAction func welcomeBtnWasPressed(_ sender: Any) {
         bgImageView.isHidden = false
         logoImageView.isHidden = false
+    }
+    @IBAction func hideBtnWasPressed(_ sender: Any) {
+        hideImage()
     }
     
 }
